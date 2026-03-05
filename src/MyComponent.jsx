@@ -17,8 +17,6 @@ function MyComponent() {
         <p>Age: {age}</p>
         <button onClick={updateAge}>Set age</button>
 
-
-
         <div>
             <input value={name} onChange={handleNameChange}></input>
             <p>Name: {name}</p>
