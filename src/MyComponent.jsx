@@ -6,12 +6,23 @@ function MyComponent() {
 
     const updateName = () => setName("Bro Code");
     const updateAge = () => setAge(25);
+
+    function handleNameChange(event){
+    setName(event.target.value)
+    }
     return(<div>
         <p>Name: {name}</p>
         <button onClick={updateName}>Set Name</button>
 
         <p>Age: {age}</p>
         <button onClick={updateAge}>Set age</button>
+
+
+
+        <div>
+            <input value={name} onChange={handleNameChange}></input>
+            <p>Name: {name}</p>
+        </div>
     </div>)
 }
 
